@@ -1,4 +1,4 @@
-<img src="figs/sshot.png" width="300px">
+<img src="figs/sshot.png" width="180px">
 
 This file describes the MATLAB code and other files used in the article referenced in the title.
 The code has been developed in MATLAB version R2023a, and it relies on the [LTFAT](https://github.com/ltfat/ltfat/releases/tag/v2.6.0) toolbox (version 2.6.0).
