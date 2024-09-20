@@ -1,6 +1,7 @@
+This file describes the MATLAB code and other files used in the article *Dequantization of a signal from two parallel quantized observations*.
+
 <img src="figs/sshot.png" width="180px">
 
-This file describes the MATLAB code and other files used in the article referenced in the title.
 The code has been developed in MATLAB version R2023a, and it relies on the [LTFAT](https://github.com/ltfat/ltfat/releases/tag/v2.6.0) toolbox (version 2.6.0).
 
 In the root folder, there are two main m-files. The primary m-file is `dequantization_main.m`, and it runs a dequantization experiment.
