@@ -8,3 +8,33 @@ quantized observations</em> authored by Vojtěch Kovanda and Pavel Rajmic, submi
 <p>We propose a technique of signal acquisition using a combination of two devices with different sampling rates and quantization accuracies. Subsequent processing involving sparsity regularization enables us to reconstruct the signal at such a sampling frequency and with such a bit depth that was not possible using the two devices independently. Objective and subjective tests show the superiority of the proposed method in comparison with alternatives.</p>
 </blockquote>
 <p>The preprint is available at <a href="https://arxiv.org/abs/2409.08071">arXiv</a>.</p>
+
+<h1>Audio examples from the listening test</h1>
+You can listen to all audio excerpts used in the listening test.
+
+<h2>Bass guitar</h2> 
+<table>
+	<tbody>
+		<tr>
+			<td>Original audio (x)</td>
+			<td><audio src="listening_test_8and16_bps/bass_guitar2_x" controls preload style="width: 200px;"></audio></td>
+		</tr>
+		<tr>
+			<td>Quantized audio (y2, effectively 8 bps)</td>
+			<td><audio src="listening_test_8and16_bps/bass_guitar2_y2.wav" controls preload style="width: 200px;"></audio></td>
+		</tr>
+		<tr>
+			<td>CP(y2) reconst. from y2</td>
+			<td><audio src="listening_test_8and16_bps/bass_guitar2_y2.wav" controls preload style="width: 200px;"></audio></td>
+        </tr>
+		<tr>
+			<td>dither(y2)</td>
+			<td><audio src="listening_test_8and16_bps/bass_guitar2_dither24to8.wav" controls preload style="width: 200px;"></audio></td>
+		</tr>
+		<tr>
+			<td>our reconstruction from y1 and y2</td>
+			<td><audio src="listening_test_8and16_bps/bass_guitar2_xhat.wav" controls preload style="width: 200px;"></audio></td>
+		</tr>
+	</tbody>
+</table>
+
