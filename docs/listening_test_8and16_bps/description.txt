@@ -1,0 +1,8 @@
+The excerpts are playable from the companion github web page. 
+
+Each folder contains several instances of a test signal:
+* the original signal, appendix '_x'; for example 'bass_guitar2_x.wav'
+* signal y2 itself, i.e., the input x quantized to 8 bps, appendix '_y2'; for example 'bass_guitar2_y2.wav'
+* estimation of x solely from y2 via the CP algorithm, appendix '_xcp'; for example 'bass_guitar2_xcp.wav'  
+* x (24 bps) converted to 8 bps with the use of dithering; for example 'bass_guitar2_dither24to8.wav'
+* estimation of x from both y1 (16 bps) and y2 (8 bps), appendix '_xhat'; for example 'bass_guitar2_xhat.wav'
