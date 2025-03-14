@@ -67,158 +67,28 @@ Objective tests show the evaluation of the proposed method in comparison with th
 	</tbody>
 </table>
 
-<h2>Cello 2</h2> 
+<h2>Flute, 7 bps</h2> 
 <table>
 	<tbody>
 		<tr>
 			<td>Original audio (<strong>x</strong>)</td>
-			<td><audio src="listening_test_8and16_bps/cello_pizz/cello_pizz_x.wav" controls preload style="width: 180px;"></audio></td>
+			<td>24 bps</td>
+			<td><audio src="sound_examples/flute_reference.wav" controls preload style="width: 180px;"></audio></td>
 		</tr>
 		<tr>
-			<td>Quantized audio (<strong>y</strong><sub>2</sub>, effectively 8 bps)</td>
-			<td><audio src="listening_test_8and16_bps/cello_pizz/cello_pizz_y2.wav" controls preload style="width: 180px;"></audio></td>
+			<td>Quantized audio (<strong>x</strong><sub>Q</sub>)</td>
+			<td>7 bps</td>
+			<td><audio src="sound_examples/flute_x_q_7-bits.wav" controls preload style="width: 180px;"></audio></td>
 		</tr>
 		<tr>
-			<td>Reconst. via the CP algorithm (CP(<strong>y</strong><sub>2</sub>))</td>
-			<td><audio src="listening_test_8and16_bps/cello_pizz/cello_pizz_xcp.wav" controls preload style="width: 180px;"></audio></td>
+			<td>Reconst. via the CP algorithm, i.e. CP(<strong>x</strong><sub>Q</sub>)</td>
+			<td>7 bps</td>
+			<td><audio src="sound_examples/flute_CP(x_q)_7-bits.wav" controls preload style="width: 180px;"></audio></td>
         </tr>
 		<tr>
-			<td>Dithered version (dither(<strong>y</strong><sub>2</sub>), 8 bps)</td>
-			<td><audio src="listening_test_8and16_bps/cello_pizz/cello_pizz_dither24to8.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>our reconstruction from <strong>y</strong><sub>1</sub> and <strong>y</strong><sub>2</sub></td>
-			<td><audio src="listening_test_8and16_bps/cello_pizz/cello_pizz_xhat.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-	</tbody>
-</table>
-
-<h2>Harpsichord</h2> 
-<table>
-	<tbody>
-		<tr>
-			<td>Original audio (<strong>x</strong>)</td>
-			<td><audio src="listening_test_8and16_bps/Harpsichord/Harpsichord_x.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>Quantized audio (<strong>y</strong><sub>2</sub>, effectively 8 bps)</td>
-			<td><audio src="listening_test_8and16_bps/Harpsichord/Harpsichord_y2.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>Reconst. via the CP algorithm (CP(<strong>y</strong><sub>2</sub>))</td>
-			<td><audio src="listening_test_8and16_bps/Harpsichord/Harpsichord_xcp.wav" controls preload style="width: 180px;"></audio></td>
-        </tr>
-		<tr>
-			<td>Dithered version (dither(<strong>y</strong><sub>2</sub>), 8 bps)</td>
-			<td><audio src="listening_test_8and16_bps/Harpsichord/Harpsichord_dither24to8.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>our reconstruction from <strong>y</strong><sub>1</sub> and <strong>y</strong><sub>2</sub></td>
-			<td><audio src="listening_test_8and16_bps/Harpsichord/Harpsichord_xhat.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-	</tbody>
-</table>
-
-<h2>Organ</h2> 
-<table>
-	<tbody>
-		<tr>
-			<td>Original audio (<strong>x</strong>)</td>
-			<td><audio src="listening_test_8and16_bps/organ/organ_x.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>Quantized audio (<strong>y</strong><sub>2</sub>, effectively 8 bps)</td>
-			<td><audio src="listening_test_8and16_bps/organ/organ_y2.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>Reconst. via the CP algorithm (CP(<strong>y</strong><sub>2</sub>))</td>
-			<td><audio src="listening_test_8and16_bps/organ/organ_xcp.wav" controls preload style="width: 180px;"></audio></td>
-        </tr>
-		<tr>
-			<td>Dithered version (dither(<strong>y</strong><sub>2</sub>), 8 bps)</td>
-			<td><audio src="listening_test_8and16_bps/organ/organ_dither24to8.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>our reconstruction from <strong>y</strong><sub>1</sub> and <strong>y</strong><sub>2</sub></td>
-			<td><audio src="listening_test_8and16_bps/organ/organ_xhat.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-	</tbody>
-</table>
-
-<h2>Trumpets</h2> 
-<table>
-	<tbody>
-		<tr>
-			<td>Original audio (<strong>x</strong>)</td>
-			<td><audio src="listening_test_8and16_bps/trumpet/trumpet_x.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>Quantized audio (<strong>y</strong><sub>2</sub>, effectively 8 bps)</td>
-			<td><audio src="listening_test_8and16_bps/trumpet/trumpet_y2.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>Reconst. via the CP algorithm (CP(<strong>y</strong><sub>2</sub>))</td>
-			<td><audio src="listening_test_8and16_bps/trumpet/trumpet_xcp.wav" controls preload style="width: 180px;"></audio></td>
-        </tr>
-		<tr>
-			<td>Dithered version (dither(<strong>y</strong><sub>2</sub>), 8 bps)</td>
-			<td><audio src="listening_test_8and16_bps/trumpet/trumpet_dither24to8.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>our reconstruction from <strong>y</strong><sub>1</sub> and <strong>y</strong><sub>2</sub></td>
-			<td><audio src="listening_test_8and16_bps/trumpet/trumpet_xhat.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-	</tbody>
-</table>
-
-<h2>Violin 1</h2> 
-<table>
-	<tbody>
-		<tr>
-			<td>Original audio (<strong>x</strong>)</td>
-			<td><audio src="listening_test_8and16_bps/violin1_1/violin1_1_x.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>Quantized audio (<strong>y</strong><sub>2</sub>, effectively 8 bps)</td>
-			<td><audio src="listening_test_8and16_bps/violin1_1/violin1_1_y2.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>Reconst. via the CP algorithm (CP(<strong>y</strong><sub>2</sub>))</td>
-			<td><audio src="listening_test_8and16_bps/violin1_1/violin1_1_xcp.wav" controls preload style="width: 180px;"></audio></td>
-        </tr>
-		<tr>
-			<td>Dithered version (dither(<strong>y</strong><sub>2</sub>), 8 bps)</td>
-			<td><audio src="listening_test_8and16_bps/violin1_1/violin1_1_dither24to8.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>our reconstruction from <strong>y</strong><sub>1</sub> and <strong>y</strong><sub>2</sub></td>
-			<td><audio src="listening_test_8and16_bps/violin1_1/violin1_1_xhat.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-	</tbody>
-</table>
-
-<h2>Violin 2</h2> 
-<table>
-	<tbody>
-		<tr>
-			<td>Original audio (<strong>x</strong>)</td>
-			<td><audio src="listening_test_8and16_bps/violin2_1/violin2_1_x.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>Quantized audio (<strong>y</strong><sub>2</sub>, effectively 8 bps)</td>
-			<td><audio src="listening_test_8and16_bps/violin2_1/violin2_1_y2.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>Reconst. via the CP algorithm (CP(<strong>y</strong><sub>2</sub>))</td>
-			<td><audio src="listening_test_8and16_bps/violin2_1/violin2_1_xcp.wav" controls preload style="width: 180px;"></audio></td>
-        </tr>
-		<tr>
-			<td>Dithered version (dither(<strong>y</strong><sub>2</sub>), 8 bps)</td>
-			<td><audio src="listening_test_8and16_bps/violin2_1/violin2_1_dither24to8.wav" controls preload style="width: 180px;"></audio></td>
-		</tr>
-		<tr>
-			<td>our reconstruction from <strong>y</strong><sub>1</sub> and <strong>y</strong><sub>2</sub></td>
-			<td><audio src="listening_test_8and16_bps/violin2_1/violin2_1_xhat.wav" controls preload style="width: 180px;"></audio></td>
+			<td>Our reconstruction from <strong>y</strong><sub>1</sub> and <strong>y</strong><sub>2</sub></td>
+			<td>7 bps</td>
+			<td><audio src="sound_examples/flute_xhat_(12,4).wav" controls preload style="width: 180px;"></audio></td>
 		</tr>
 	</tbody>
 </table>
