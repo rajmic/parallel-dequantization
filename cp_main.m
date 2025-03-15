@@ -7,15 +7,17 @@
 ltfatstart
 
 %% input signal
+ audiofile = 'test/violin_scales/A_staccato.wav';
 
-audiofile = 'test/violin1_1.wav';   % 'violin1_1.wav'
-                                    % 'violin2_1.wav'
-                                    % 'cello_1.wav'
-                                    % 'cello_pizz.wav' 
-                                    % 'bass_guitar2.wav' 
-                                    % 'Harpsichord.wav' 
-                                    % 'trumpet.wav' 
-                                    % 'organ.wav'
+ % the audio recordings are divided by instruments in the "test" folder
+ 
+ % for example
+ % 'test/violin_scales/A_staccato.wav'
+ % 'test/trumpet_scales/A#.wav'
+ % 'test/sax_tenor_scales/A#_legato.wav'
+ % 'test/sax_alto_scales/D#_staccato.wav'
+ % 'test/flute_scales/C_legato.wav'
+ % 'test/clarinet_scales/F_legato.wav'
 
 [x, param.fs] = audioread(audiofile);
 
