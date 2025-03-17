@@ -1,4 +1,4 @@
-This file describes the MATLAB code and other files used in the article *Dequantization of a signal from two parallel quantized observations*.
+This file describes the MATLAB code and other files used in the article *Dequantized signal from two parallel quantized observations*.
 
 <img src="figs/sshot.png" width="180px">
 
